@@ -29,7 +29,7 @@ Monday: [
         ]
     },
     {
-        name:"Pull-Up Progression",
+        name:"Pull-Up Prog.",
         sets:"5",
         reps:"10",
         rest:"2 mins",
@@ -55,7 +55,7 @@ Monday: [
         ]
     },
     {
-        name:"Barbell Curls",
+        name:"BB Curls",
         sets:"4",
         reps:"10 - 15",
         rest:"1 min",
@@ -98,7 +98,7 @@ Tuesday: [
         ]
     },
     {
-        name:"Romanian Deadlifts",
+        name:"Rom. Deadlifts",
         sets:"5",
         reps:"8 - 12",
         rest:"2 mins",
@@ -112,7 +112,7 @@ Tuesday: [
         ]
     },
     {
-        name:"DB Walking Lunges",
+        name:"Walking Lunges",
         sets:"5",
         reps:"12 Steps/Leg",
         rest:"1 min",
@@ -120,11 +120,12 @@ Tuesday: [
         instructions:[
             "Take long steps",
             "Lower under control",
-            "Push through the front foot"
+            "Push through the front foot",
+            "Use dumbells"
         ]
     },
     {
-        name:"BB Bulgarian Squat",
+        name:"BB Bul. Squat",
         sets:"3",
         reps:"10 - 15",
         rest:"2 mins",
@@ -150,7 +151,7 @@ Tuesday: [
         ]
     },
     {
-        name:"Seated Calf Raises",
+        name:"St. Calf Raises",
         sets:"5",
         reps:"20",
         rest:"1 min",
@@ -207,7 +208,7 @@ Thursday: [
         ]
     },
     {
-        name:"Pull-Up Progression",
+        name:"Pull-Up Prog.",
         sets:"5",
         reps:"10",
         rest:"2 mins",
@@ -233,7 +234,7 @@ Thursday: [
         ]
     },
     {
-        name:"Barbell Curls",
+        name:"BB Curls",
         sets:"4",
         reps:"10 - 15",
         rest:"1 min",
@@ -276,7 +277,7 @@ Friday: [
         ]
     },
     {
-        name:"Romanian Deadlifts",
+        name:"Rom. Deadlifts",
         sets:"5",
         reps:"8 - 12",
         rest:"2 mins",
@@ -290,7 +291,7 @@ Friday: [
         ]
     },
     {
-        name:"DB Walking Lunges",
+        name:"Walking Lunges",
         sets:"5",
         reps:"12 Steps/Leg",
         rest:"1 min",
@@ -298,11 +299,12 @@ Friday: [
         instructions:[
             "Take long steps",
             "Lower under control",
-            "Push through the front foot"
+            "Push through the front foot",
+            "Use dumbells"
         ]
     },
     {
-        name:"BB Bulgarian Squat",
+        name:"BB Bul. Squat",
         sets:"3",
         reps:"10 - 15",
         rest:"2 mins",
@@ -328,7 +330,7 @@ Friday: [
         ]
     },
     {
-        name:"Seated Calf Raises",
+        name:"St. Calf Raises",
         sets:"5",
         reps:"20",
         rest:"1 min",
