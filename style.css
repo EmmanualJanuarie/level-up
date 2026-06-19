@@ -41,9 +41,7 @@ background:linear-gradient(180deg,rgba(17,24,39,.98),rgba(15,23,42,.98));
 
 border:1px solid rgba(255,255,255,.08);
 
-box-shadow:
-0 0 50px rgba(103,232,249,.08),
-0 30px 80px rgba(0,0,0,.6);
+box-shadow:0 0 50px rgba(103,232,249,.08),0 30px 80px rgba(0,0,0,.6);
 
 padding:32px;
 
@@ -55,6 +53,7 @@ position:relative;
 overflow:hidden;
 }
 
+/* glow */
 .exercise-card::before,
 .exercise-card::after{
 content:"";
@@ -76,9 +75,7 @@ left:-100px;
 background:radial-gradient(circle,rgba(34,197,94,.12),transparent 70%);
 }
 
-.card-top,
-.card-middle,
-.card-bottom{
+.card-top,.card-middle,.card-bottom{
 position:relative;
 z-index:2;
 }
@@ -90,14 +87,12 @@ letter-spacing:-3px;
 background:linear-gradient(90deg,#67e8f9,#60a5fa,#8b5cf6);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
-text-align: center;
 }
 
 .day{
 margin-top:8px;
 font-size:16px;
 color:#94a3b8;
-text-align: center;
 }
 
 .exercise-label{
@@ -107,12 +102,11 @@ font-weight:700;
 letter-spacing:3px;
 text-transform:uppercase;
 color:#67e8f9;
-text-align: center;
 }
 
 .exercise-name{
 margin-top:18px;
-font-size:56px;
+font-size:50px;
 font-weight:900;
 line-height:.95;
 letter-spacing:-2px;
@@ -170,29 +164,6 @@ font-size:22px;
 font-weight:800;
 }
 
-.instructions{
-margin-top:22px;
-}
-
-.instructions h4{
-font-size:13px;
-letter-spacing:2px;
-text-transform:uppercase;
-color:#67e8f9;
-margin-bottom:10px;
-}
-
-.instructions ul{
-padding-left:18px;
-}
-
-.instructions li{
-margin-bottom:8px;
-line-height:1.5;
-color:#dbe4f0;
-font-size:15px;
-}
-
 .swipe-indicator{
 text-align:center;
 padding:18px;
@@ -207,6 +178,7 @@ animation:float 2s infinite;
 100%{transform:translateY(0);}
 }
 
+/* LEVEL POPUP */
 .level-popup{
 position:fixed;
 inset:0;
@@ -230,8 +202,7 @@ margin-top:10px;
 color:#cbd5e1;
 }
 
-.hidden{display:none;}
-
+/* REST DAY */
 .rest-card{
 height:100dvh;
 display:flex;
@@ -253,24 +224,20 @@ color:#94a3b8;
 line-height:1.6;
 }
 
+/* INSTRUCTION PANEL */
 .instruction-panel{
 position:absolute;
-top:0;
-left:0;
-
-width:100%;
-height:100%;
-
-padding:32px;
-
+inset:0;
 background:rgba(10,15,30,.98);
 backdrop-filter:blur(20px);
 
-z-index:10;
+padding:32px;
 
 display:flex;
 flex-direction:column;
 justify-content:center;
+
+z-index:10;
 }
 
 .instruction-panel h4{
