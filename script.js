@@ -438,3 +438,50 @@ You completed today's mission. Come back tomorrow.
 
 }
 });
+
+let startX = 0;
+let startY = 0;
+
+document.addEventListener("touchstart", (e) => {
+startX = e.touches[0].clientX;
+startY = e.touches[0].clientY;
+});
+
+document.addEventListener("touchend", (e) => {
+
+const endX = e.changedTouches[0].clientX;
+const endY = e.changedTouches[0].clientY;
+
+const diffX = endX - startX;
+const diffY = endY - startY;
+
+/* Swipe RIGHT → show instructions */
+if (diffX > 80 && Math.abs(diffY) < 60) {
+
+const panel = document.getElementById("instructionPanel");
+
+const list = document.getElementById("instructionsListSide");
+list.innerHTML = "";
+
+workouts[today][index].instructions.forEach(i => {
+const li = document.createElement("li");
+li.textContent = i;
+list.appendChild(li);
+});
+
+panel.classList.remove("hidden");
+}
+
+/* Swipe LEFT → close instructions */
+if (diffX < -80 && Math.abs(diffY) < 60) {
+
+document.getElementById("instructionPanel")
+.classList.add("hidden");
+}
+
+/* Swipe UP → next exercise (your existing logic stays) */
+if (startY - endY > 100) {
+document.getElementById("instructionPanel")
+.classList.add("hidden");
+}
+});
