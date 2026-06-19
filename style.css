@@ -87,12 +87,14 @@ letter-spacing:-3px;
 background:linear-gradient(90deg,#67e8f9,#60a5fa,#8b5cf6);
 -webkit-background-clip:text;
 -webkit-text-fill-color:transparent;
+text-align: center;
 }
 
 .day{
 margin-top:8px;
 font-size:16px;
 color:#94a3b8;
+text-align: center;
 }
 
 .exercise-label{
@@ -102,14 +104,16 @@ font-weight:700;
 letter-spacing:3px;
 text-transform:uppercase;
 color:#67e8f9;
+text-align: center;
 }
 
 .exercise-name{
 margin-top:18px;
-font-size:50px;
+font-size:40px;
 font-weight:900;
 line-height:.95;
 letter-spacing:-2px;
+text-align: center;
 }
 
 .stats{
