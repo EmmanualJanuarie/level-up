@@ -420,25 +420,6 @@ popup.classList.add("hidden");
 
 index++;
 
-if(index<workouts[today].length){
-load();
-}else{
-document.querySelector(".exercise-card").innerHTML=`
-<div style="height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
-<h1 style="font-size:54px;font-weight:900;background:linear-gradient(90deg,#22c55e,#67e8f9,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
-Workout Complete
-</h1>
-<p style="margin-top:15px;color:#94a3b8;max-width:260px;line-height:1.6;">
-You completed today's mission. Come back tomorrow.
-</p>
-</div>`;
-}
-
-},1000);
-
-}
-});
-
 let startX = 0;
 let startY = 0;
 
@@ -485,3 +466,23 @@ document.getElementById("instructionPanel")
 .classList.add("hidden");
 }
 });
+
+if(index<workouts[today].length){
+load();
+}else{
+document.querySelector(".exercise-card").innerHTML=`
+<div style="height:100%;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;">
+<h1 style="font-size:54px;font-weight:900;background:linear-gradient(90deg,#22c55e,#67e8f9,#8b5cf6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">
+Workout Complete
+</h1>
+<p style="margin-top:15px;color:#94a3b8;max-width:260px;line-height:1.6;">
+You completed today's mission. Come back tomorrow.
+</p>
+</div>`;
+}
+
+},1000);
+
+}
+});
+
