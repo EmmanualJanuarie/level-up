@@ -13,10 +13,7 @@
     <div id="restDay" class="rest-screen hidden">
         <div class="rest-card">
             <h1>Recovery Day</h1>
-            <p>
-                Growth happens during recovery.
-                Come back for your next mission.
-            </p>
+            <p>Growth happens during recovery. Come back tomorrow.</p>
         </div>
     </div>
 
@@ -25,15 +22,9 @@
         <div class="exercise-card">
 
             <div class="card-top">
-
                 <h1 class="title">Level Up</h1>
-
                 <p class="day" id="dayTitle"></p>
-
-                <div class="exercise-label">
-                    Today's Mission
-                </div>
-
+                <div class="exercise-label">Today's Mission</div>
             </div>
 
             <div class="card-middle">
@@ -41,7 +32,6 @@
                 <h2 id="exerciseName" class="exercise-name"></h2>
 
                 <div class="stats">
-
                     <div class="stat-box">
                         <span>Sets</span>
                         <h3 id="sets"></h3>
@@ -51,25 +41,31 @@
                         <span>Reps</span>
                         <h3 id="reps"></h3>
                     </div>
+                </div>
+
+                <div class="extra-stats">
+
+                    <div class="extra-box">
+                        <span>Rest Time</span>
+                        <h3 id="restTime"></h3>
+                    </div>
+
+                    <div class="extra-box">
+                        <span>Tempo</span>
+                        <h3 id="tempo"></h3>
+                    </div>
 
                 </div>
 
                 <div class="instructions">
-
                     <h4>Instructions</h4>
-
-                    <p id="instructions"></p>
-
+                    <ul id="instructionsList"></ul>
                 </div>
 
             </div>
 
             <div class="card-bottom">
-
-                <div class="swipe-indicator">
-                    Swipe Up To Level Up
-                </div>
-
+                <div class="swipe-indicator">Swipe Up To Level Up</div>
             </div>
 
         </div>
@@ -79,20 +75,12 @@
 </div>
 
 <div id="levelPopup" class="level-popup hidden">
-
     <div class="popup-content">
-
         <h2>LEVEL UP</h2>
-
-        <p>
-            You just leveled up.
-        </p>
-
+        <p>You just leveled up</p>
     </div>
-
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
